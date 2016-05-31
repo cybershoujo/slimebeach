@@ -3,28 +3,241 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <datafiles number="2" name="datafiles">
+    <datafile>
+      <name>LICENSE.txt</name>
+      <exists>-1</exists>
+      <size>35795</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>LICENSE.txt</filename>
+    </datafile>
+    <datafile>
+      <name>documentation.html</name>
+      <exists>-1</exists>
+      <size>91926</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>documentation.html</filename>
+    </datafile>
+  </datafiles>
+  <NewExtensions>
+    <extension index="0">extensions\HappyTear Text-Dialogue Engine</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\obj_pt_floormap</sprite>
-    <sprite>sprites\obj_pt_floormap_inverse</sprite>
     <sprites name="pt_player">
-      <sprite>sprites\pt_player_up</sprite>
-      <sprite>sprites\pt_player_down</sprite>
-      <sprite>sprites\pt_player_right</sprite>
       <sprite>sprites\pt_player_left</sprite>
+      <sprite>sprites\pt_player_up</sprite>
+      <sprite>sprites\pt_player_right</sprite>
+      <sprite>sprites\pt_player_down</sprite>
     </sprites>
-    <sprite>sprites\spr_cutie</sprite>
-    <sprite>sprites\spr_placeholder</sprite>
+    <sprites name="Text Engine - Sprites">
+      <sprite>sprites\spr_textnext</sprite>
+      <sprite>sprites\spr_textend</sprite>
+      <sprites name="demo">
+        <sprite>sprites\spr_text_demo_wall</sprite>
+        <sprite>sprites\spr_text_demo_player</sprite>
+        <sprite>sprites\spr_man</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="pt_beancube">
+      <sprite>sprites\pt_beancube_l</sprite>
+      <sprite>sprites\pt_beancube_r</sprite>
+      <sprite>sprites\pt_beancube_d</sprite>
+      <sprite>sprites\pt_beancube_u</sprite>
+    </sprites>
+    <sprites name="pt_deco">
+      <sprite>sprites\spr_dollar</sprite>
+      <sprite>sprites\spr_cutie</sprite>
+    </sprites>
+    <sprites name="pt_map">
+      <sprite>sprites\obj_pt_floormap</sprite>
+      <sprite>sprites\obj_pt_floormap_inverse</sprite>
+      <sprite>sprites\spr_placeholder</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Text Engine - Backgrounds">
+      <backgrounds name="demo">
+        <background>background\bkg_sign_new</background>
+      </backgrounds>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Text Engine">
+      <script>scripts\text_setup.gml</script>
+      <script>scripts\text.gml</script>
+      <script>scripts\text_add_command.gml</script>
+      <script>scripts\text_get_state.gml</script>
+      <script>scripts\text_reset_state.gml</script>
+      <script>scripts\text_draw.gml</script>
+      <script>scripts\text_update.gml</script>
+      <scripts name="configuration">
+        <script>scripts\text_create_conversation.gml</script>
+        <script>scripts\text_action_pressed.gml</script>
+        <script>scripts\text_room_to_surface_x.gml</script>
+        <script>scripts\text_room_to_surface_y.gml</script>
+        <script>scripts\text_get_surface_w.gml</script>
+        <script>scripts\text_get_surface_h.gml</script>
+        <script>scripts\text_resize_surfaces.gml</script>
+        <script>scripts\text_wait_input_textnext.gml</script>
+      </scripts>
+      <scripts name="tools">
+        <script>scripts\text_ds_list_queue_head.gml</script>
+        <script>scripts\text_ds_list_queue_dequeue.gml</script>
+        <script>scripts\text_draw_roundrect_texture.gml</script>
+        <script>scripts\text_draw_rectangle_texture.gml</script>
+        <script>scripts\text_string_width.gml</script>
+      </scripts>
+      <scripts name="drawing">
+        <script>scripts\text_draw_logic.gml</script>
+        <script>scripts\text_draw_text.gml</script>
+        <scripts name="displaystyles">
+          <scripts name="banner">
+            <script>scripts\text_draw_c_banner_metadata.gml</script>
+            <script>scripts\text_draw_c_banner_enlargement.gml</script>
+            <script>scripts\text_draw_c_banner_position_manual.gml</script>
+            <script>scripts\text_draw_c_banner_position_auto.gml</script>
+            <script>scripts\text_draw_c_banner_name.gml</script>
+            <script>scripts\text_draw_c_banner_background.gml</script>
+            <script>scripts\text_draw_c_banner_textnext.gml</script>
+            <script>scripts\text_draw_c_banner_extra.gml</script>
+          </scripts>
+          <scripts name="pointing">
+            <script>scripts\text_draw_c_pointing_metadata.gml</script>
+            <script>scripts\text_draw_c_pointing_enlargement.gml</script>
+            <script>scripts\text_draw_c_pointing_position_manual.gml</script>
+            <script>scripts\text_draw_c_pointing_position_auto.gml</script>
+            <script>scripts\text_draw_c_pointing_name.gml</script>
+            <script>scripts\text_draw_c_pointing_background.gml</script>
+            <script>scripts\text_draw_c_pointing_textnext.gml</script>
+            <script>scripts\text_draw_c_pointing_extra.gml</script>
+          </scripts>
+          <scripts name="bubble">
+            <script>scripts\text_draw_c_bubble_metadata.gml</script>
+            <script>scripts\text_draw_c_bubble_enlargement.gml</script>
+            <script>scripts\text_draw_c_bubble_position_manual.gml</script>
+            <script>scripts\text_draw_c_bubble_position_auto.gml</script>
+            <script>scripts\text_draw_c_bubble_name.gml</script>
+            <script>scripts\text_draw_c_bubble_background.gml</script>
+            <script>scripts\text_draw_c_bubble_textnext.gml</script>
+            <script>scripts\text_draw_c_bubble_extra.gml</script>
+          </scripts>
+        </scripts>
+      </scripts>
+      <scripts name="step">
+        <script>scripts\text_update_logic.gml</script>
+        <scripts name="commands - logic">
+          <script>scripts\text_command_logic_c_none.gml</script>
+          <script>scripts\text_command_logic_c_next_page.gml</script>
+          <script>scripts\text_command_logic_c_wait_input.gml</script>
+          <script>scripts\text_command_logic_c_show.gml</script>
+          <script>scripts\text_command_logic_c_close.gml</script>
+          <script>scripts\text_command_logic_c_wait_time.gml</script>
+          <script>scripts\text_command_logic_c_noline.gml</script>
+          <script>scripts\text_command_logic_c_line.gml</script>
+          <script>scripts\text_command_logic_c_kill.gml</script>
+          <script>scripts\text_command_logic_c_set.gml</script>
+          <script>scripts\text_command_logic_c_bold.gml</script>
+          <script>scripts\text_command_logic_c_italic.gml</script>
+          <script>scripts\text_command_logic_c_color.gml</script>
+          <script>scripts\text_command_logic_c_font.gml</script>
+          <script>scripts\text_command_logic_c_reset_formatting.gml</script>
+          <script>scripts\text_command_logic_c_lock_player.gml</script>
+        </scripts>
+        <scripts name="commands - animation logic">
+          <script>scripts\text_command_animation_c_noline.gml</script>
+          <script>scripts\text_command_animation_c_line.gml</script>
+          <script>scripts\text_command_animation_c_close.gml</script>
+          <script>scripts\text_command_animation_c_show.gml</script>
+        </scripts>
+        <scripts name="extensions">
+          <script>scripts\text_update_logic_disappear.gml</script>
+          <script>scripts\text_update_logic_disappear_sub.gml</script>
+          <script>scripts\text_update_animation_autoenlargement.gml</script>
+        </scripts>
+        <script>scripts\text_update_logic_continue.gml</script>
+      </scripts>
+      <scripts name="debug">
+        <script>scripts\text_debugger.gml</script>
+      </scripts>
+      <scripts name="demos">
+        <script>scripts\text_demo1_simple.gml</script>
+        <script>scripts\text_demo2_animations.gml</script>
+        <script>scripts\text_demo3_pointing.gml</script>
+        <script>scripts\text_demo4_multiple.gml</script>
+        <script>scripts\text_demo5_lock.gml</script>
+        <script>scripts\text_demo6_bubble.gml</script>
+        <script>scripts\text_demo7_colors.gml</script>
+        <script>scripts\text_demo8_manual.gml</script>
+        <script>scripts\text_demo9_disappear.gml</script>
+        <script>scripts\text_demo10_multi1.gml</script>
+        <script>scripts\text_demo11_multi2.gml</script>
+        <script>scripts\text_demo12_onlyonce.gml</script>
+      </scripts>
+    </scripts>
+  </scripts>
+  <fonts name="fonts">
+    <fonts name="Text Engine - Texts">
+      <font>fonts\fnt_speach</font>
+      <font>fonts\fnt_speach_bold</font>
+      <font>fonts\fnt_speach_bold_italic</font>
+      <font>fonts\fnt_speach_italic</font>
+      <font>fonts\fnt_speach_small</font>
+      <font>fonts\fnt_speach_small_bold</font>
+      <font>fonts\fnt_speach_small_bold_italic</font>
+      <font>fonts\fnt_speach_small_italic</font>
+    </fonts>
+    <fonts name="Anklada">
+      <font>fonts\anklada</font>
+      <font>fonts\small_anklada</font>
+      <font>fonts\anklada_bold</font>
+      <font>fonts\small_anklada_bold</font>
+      <font>fonts\anklada_italic</font>
+      <font>fonts\small_anklada_italic</font>
+      <font>fonts\small_anklada_bold_italic</font>
+      <font>fonts\anklada_bold_italic</font>
+    </fonts>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_floor</object>
-    <object>objects\obj_player</object>
     <object>objects\room_inverse</object>
     <object>objects\obj_cutie</object>
     <object>objects\obj_16</object>
+    <object>objects\obj_player</object>
+    <objects name="deco">
+      <object>objects\obj_sanddollar</object>
+    </objects>
+    <objects name="Text Engine - Demo Objects">
+      <object>objects\obj_text_control</object>
+      <object>objects\obj_text_demo_player</object>
+      <object>objects\obj_text_demo_nothing</object>
+      <object>objects\obj_text_demo</object>
+      <object>objects\obj_text_demo_onlyonce</object>
+      <object>objects\obj_text_demo_walkby</object>
+      <object>objects\obj_text_demo_multi</object>
+      <object>objects\obj_text_demo_wall</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
