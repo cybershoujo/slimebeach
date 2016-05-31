@@ -44,11 +44,28 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="pt_player">
-      <sprite>sprites\pt_player_left</sprite>
-      <sprite>sprites\pt_player_up</sprite>
-      <sprite>sprites\pt_player_right</sprite>
-      <sprite>sprites\pt_player_down</sprite>
+    <sprites name="pt_deco">
+      <sprite>sprites\spr_dollar</sprite>
+      <sprite>sprites\spr_cutie</sprite>
+    </sprites>
+    <sprites name="pt_map">
+      <sprite>sprites\obj_pt_floormap</sprite>
+      <sprite>sprites\obj_pt_floormap_inverse</sprite>
+      <sprite>sprites\spr_placeholder</sprite>
+    </sprites>
+    <sprites name="character sprites">
+      <sprites name="pt_player">
+        <sprite>sprites\pt_player_left</sprite>
+        <sprite>sprites\pt_player_up</sprite>
+        <sprite>sprites\pt_player_right</sprite>
+        <sprite>sprites\pt_player_down</sprite>
+      </sprites>
+      <sprites name="pt_beancube">
+        <sprite>sprites\pt_beancube_l</sprite>
+        <sprite>sprites\pt_beancube_r</sprite>
+        <sprite>sprites\pt_beancube_d</sprite>
+        <sprite>sprites\pt_beancube_u</sprite>
+      </sprites>
     </sprites>
     <sprites name="Text Engine - Sprites">
       <sprite>sprites\spr_textnext</sprite>
@@ -58,21 +75,6 @@
         <sprite>sprites\spr_text_demo_player</sprite>
         <sprite>sprites\spr_man</sprite>
       </sprites>
-    </sprites>
-    <sprites name="pt_beancube">
-      <sprite>sprites\pt_beancube_l</sprite>
-      <sprite>sprites\pt_beancube_r</sprite>
-      <sprite>sprites\pt_beancube_d</sprite>
-      <sprite>sprites\pt_beancube_u</sprite>
-    </sprites>
-    <sprites name="pt_deco">
-      <sprite>sprites\spr_dollar</sprite>
-      <sprite>sprites\spr_cutie</sprite>
-    </sprites>
-    <sprites name="pt_map">
-      <sprite>sprites\obj_pt_floormap</sprite>
-      <sprite>sprites\obj_pt_floormap_inverse</sprite>
-      <sprite>sprites\spr_placeholder</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -84,6 +86,9 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="dialogue">
+      <script>scripts\pt_cutie_text.gml</script>
+    </scripts>
     <scripts name="Text Engine">
       <script>scripts\text_setup.gml</script>
       <script>scripts\text.gml</script>
@@ -198,16 +203,6 @@
     </scripts>
   </scripts>
   <fonts name="fonts">
-    <fonts name="Text Engine - Texts">
-      <font>fonts\fnt_speach</font>
-      <font>fonts\fnt_speach_bold</font>
-      <font>fonts\fnt_speach_bold_italic</font>
-      <font>fonts\fnt_speach_italic</font>
-      <font>fonts\fnt_speach_small</font>
-      <font>fonts\fnt_speach_small_bold</font>
-      <font>fonts\fnt_speach_small_bold_italic</font>
-      <font>fonts\fnt_speach_small_italic</font>
-    </fonts>
     <fonts name="Anklada">
       <font>fonts\anklada</font>
       <font>fonts\small_anklada</font>
@@ -241,6 +236,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
+    <rooms name="Text Engine - Demo Rooms">
+      <room>rooms\text_demo_room</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

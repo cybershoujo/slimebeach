@@ -26,15 +26,15 @@ if !instance_exists(inst) {
     var i_posy=inst.y;
     Tx = text_room_to_surface_x(i_posx)-Twidth/2;
     var point_xpos = text_room_to_surface_x(i_posx)-16;
-    if (text_room_to_surface_y(i_posy) < text_get_surface_h()/2) {
-        Ty = text_room_to_surface_y(i_posy)+100;
-        point_ypos = Ty;
-        point_spr = -1
-    } else {
+//    if (text_room_to_surface_y(i_posy) < text_get_surface_h()/2) {
+//        Ty = text_room_to_surface_y(i_posy)+100;
+//        point_ypos = Ty;
+//        point_spr = -1
+//    } else {
         Ty = text_room_to_surface_y(i_posy)-Theight-100;
         point_ypos = Ty+Theight;
         point_spr = 1;
-    }
+//    }
     //Avoid other bubbles
     var in_i, in_j, in_key, in_Tx, in_Ty, in_Twidth, in_Theight;
     var moved_vert = false;

@@ -29,7 +29,7 @@ enum text_debug {NONE=-1,DEBUG=0,INFO=1,WARNING=2,ERROR=3,CRITICAL=4};
  * Set the level of debug. The debug messages of this level and higher
  * will be shown. NONE disables debug messages.
  */
-global.text_debug_level = text_debug.DEBUG;
+global.text_debug_level = text_debug.INFO;
 
 text_debugger("text_setup",text_debug.DEBUG,"SETTING UP TEXT ENGINE");
 
@@ -98,7 +98,7 @@ ds_list_add(global.text_players,global.text_local_player);
  * be found in the manual
  */
  
-global.text_surf = 1000;
+global.text_surf = -1;
 
 /*
  * This script setups the surfaces.

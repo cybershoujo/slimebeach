@@ -28,7 +28,7 @@ ds_map_add(argument0, "disappear", false);
 ds_map_add(argument0, "animation", true);
 ds_map_add(argument0, "speed", 4);
 ds_map_add(argument0, "bold", false);
-ds_map_add(argument0, "font", "speach");
+ds_map_add(argument0, "font", "anklada");
 ds_map_add(argument0, "italic", false);
 ds_map_add(argument0, "color", $000000);
 ds_map_add(argument0, "bgcolor", $ffffff);

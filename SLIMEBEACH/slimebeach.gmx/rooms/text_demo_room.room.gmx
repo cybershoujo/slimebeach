@@ -61,7 +61,7 @@
     <instance objName="obj_text_demo_walkby" x="960" y="480" name="inst_FCA46C44" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_demo" x="1200" y="480" name="inst_E233913C" locked="0" code="self.conv = text_demo8_manual&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_demo_player" x="112" y="480" name="inst_14AF9052" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="176" y="480" name="inst_F57BE6C4" locked="0" code="self.conv = text_demo1_simple;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_text_demo" x="176" y="480" name="inst_F57BE6C4" locked="0" code="self.conv = text_demo1_simple;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_demo" x="704" y="480" name="inst_CE77FA95" locked="0" code="self.conv = text_demo5_lock&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_demo" x="304" y="480" name="inst_2DF2312E" locked="0" code="self.conv = text_demo2_animations&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_demo" x="464" y="480" name="inst_F5EFF285" locked="0" code="self.conv = text_demo3_pointing&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
