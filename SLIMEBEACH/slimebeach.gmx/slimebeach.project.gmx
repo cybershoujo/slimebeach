@@ -76,6 +76,9 @@
         <sprite>sprites\spr_man</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\pt_hp_frame</sprite>
+    <sprite>sprites\pt_hp</sprite>
+    <sprite>sprites\pt_mp</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Text Engine - Backgrounds">
@@ -88,6 +91,9 @@
   <scripts name="scripts">
     <scripts name="dialogue">
       <script>scripts\pt_cutie_text.gml</script>
+      <scripts name="test_dialogue">
+        <script>scripts\pt_damagetile_text.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Text Engine">
       <script>scripts\text_setup.gml</script>
@@ -217,8 +223,7 @@
   <objects name="objects">
     <object>objects\obj_floor</object>
     <object>objects\room_inverse</object>
-    <object>objects\obj_cutie</object>
-    <object>objects\obj_16</object>
+    <object>objects\obj_npc</object>
     <object>objects\obj_player</object>
     <objects name="deco">
       <object>objects\obj_sanddollar</object>
@@ -232,6 +237,15 @@
       <object>objects\obj_text_demo_walkby</object>
       <object>objects\obj_text_demo_multi</object>
       <object>objects\obj_text_demo_wall</object>
+    </objects>
+    <objects name="util">
+      <object>objects\obj_gui_create</object>
+      <object>objects\obj_16</object>
+      <object>objects\obj_hp_frame</object>
+      <object>objects\obj_inv</object>
+      <object>objects\obj_damagetile</object>
+      <object>objects\obj_pause</object>
+      <object>objects\obj_trail_camera</object>
     </objects>
   </objects>
   <rooms name="rooms">
