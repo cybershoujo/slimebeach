@@ -85,31 +85,29 @@ if(y &gt; i.y) depth = -1 else depth = 1;
           <argument>
             <kind>1</kind>
             <string>//Set movement variables
-moveLeft = -keyboard_check(ord("A"));
-moveRight = keyboard_check(ord("D"));
-moveUp = -keyboard_check(ord("W"));
-moveDown = keyboard_check(ord("S"));
+moveLeft = -(keyboard_check(ord("A")) or keyboard_check(vk_left));
+moveRight = (keyboard_check(ord("D")) or keyboard_check(vk_right));
+moveUp = -(keyboard_check(ord("W")) or keyboard_check(vk_up));
+moveDown = (keyboard_check(ord("S")) or keyboard_check(vk_down));
 
 //Set speeds based on movement variables
 hsp = (moveLeft + moveRight) * movespeed;
-vsp = ((moveUp + moveDown) * movespeed);
-
+vsp = (moveUp + moveDown) * movespeed;
 
 //Set facing variables
-if(keyboard_check(ord("W")))
-{
+if(keyboard_check(ord("W")) or keyboard_check(vk_up)){
     sprite_index = pt_beancube_u;
     image_speed = 1/4;
 } else 
-if(keyboard_check(ord("S"))){
+if(keyboard_check(ord("S")) or keyboard_check(vk_down)){
     sprite_index = pt_beancube_d;
     image_speed = 1/4;
 } else 
-if(keyboard_check(ord("A"))){
+if(keyboard_check(ord("A")) or keyboard_check(vk_left)){
     sprite_index = pt_beancube_l;
     image_speed = 1/4;
 } else 
-if(keyboard_check(ord("D"))){
+if(keyboard_check(ord("D")) or keyboard_check(vk_right)){
     sprite_index = pt_beancube_r;
     image_speed = 1/4;
 } else 
@@ -121,20 +119,48 @@ image_index = 0;
 //Collision code + setting x and y
 if(place_meeting(x+hsp,y,room_inverse))
 {
-        while(!place_meeting(x+sign(hsp),y,room_inverse))
+    if(place_meeting(x,y+movespeed,room_inverse) and not place_meeting(x,y-movespeed,room_inverse))
     {
-        x += sign(hsp);
+        y -= movespeed;
+        x += movespeed * sign(hsp);
+    }
+    else if(place_meeting(x,y-movespeed,room_inverse) and not place_meeting(x,y+movespeed,room_inverse))
+    {
+        y += movespeed;
+        x += movespeed * sign(hsp);
+    }
+    else
+    {
+        while(!place_meeting(x+sign(hsp),y,room_inverse))
+        {
+            x += sign(hsp);
+        }
     }
     hsp = 0;
+    
 }
 
 if(place_meeting(x,y+vsp,room_inverse))
 {
-    while(!place_meeting(x,y+sign(vsp),room_inverse))
+    if(place_meeting(x+movespeed,y,room_inverse) and not place_meeting(x-movespeed,y,room_inverse))
     {
-        y += sign(vsp);
+        x -= movespeed;
+        y += movespeed * sign(vsp);
+    }
+    else if(place_meeting(x-movespeed,y,room_inverse) and not place_meeting(x+movespeed,y,room_inverse))
+    {
+        x += movespeed;
+        y += movespeed * sign(vsp);
+    }
+    else
+    {
+        while(!place_meeting(x,y+sign(vsp),room_inverse))
+        {
+            y += sign(vsp);
+        }
     }
     vsp = 0;
+    
 }
 
 x += hsp;
