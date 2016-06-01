@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>///Show a dialogue when player is near and presses space
 
+if (global.pause == 1) exit;
+
 if (keyboard_check_pressed(vk_space)) {
     //Checks if conversation is not already running and if player is near
     if (text_get_state(0) == 0 &amp;&amp; distance_to_object(global.text_local_player) &lt; 40) {
