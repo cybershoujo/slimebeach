@@ -254,6 +254,7 @@
       <object>objects\obj_damagetile</object>
       <object>objects\obj_pause</object>
       <object>objects\obj_trail_camera</object>
+      <object>objects\obj_collidable</object>
     </objects>
   </objects>
   <rooms name="rooms">

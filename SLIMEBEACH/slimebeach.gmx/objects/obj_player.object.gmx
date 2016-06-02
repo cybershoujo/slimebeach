@@ -125,14 +125,14 @@ image_index = 0;
 }
 
 //Collision code + setting x and y
-if(place_meeting(x+hsp,y,room_inverse))
+if(place_meeting(x+hsp,y,obj_collidable))
 {
-            if(place_meeting(x,y+movespeed,room_inverse) and not place_meeting(x,y-movespeed,room_inverse))
+            if(place_meeting(x,y+movespeed,obj_collidable) and not place_meeting(x,y-movespeed,obj_collidable))
      {
          y -= movespeed;
          x += movespeed * sign(hsp);
      }
-     else if(place_meeting(x,y-movespeed,room_inverse) and not place_meeting(x,y+movespeed,room_inverse))
+     else if(place_meeting(x,y-movespeed,obj_collidable) and not place_meeting(x,y+movespeed,obj_collidable))
      {
          y += movespeed;
          x += movespeed * sign(hsp);
@@ -140,7 +140,7 @@ if(place_meeting(x+hsp,y,room_inverse))
      else
       {
 
-         while(!place_meeting(x+sign(hsp),y,room_inverse))
+         while(!place_meeting(x+sign(hsp),y,obj_collidable))
          {
              x += sign(hsp);
          }
@@ -150,22 +150,22 @@ if(place_meeting(x+hsp,y,room_inverse))
   }
 
 
-if(place_meeting(x,y+vsp,room_inverse))
+if(place_meeting(x,y+vsp,obj_collidable))
 {
-     if(place_meeting(x+movespeed,y,room_inverse) and not place_meeting(x-movespeed,y,room_inverse))
+     if(place_meeting(x+movespeed,y,obj_collidable) and not place_meeting(x-movespeed,y,obj_collidable))
      {
-         x -= movespeed;
+         x -= movespeed + 1;
          y += movespeed * sign(vsp);
      }
-     else if(place_meeting(x-movespeed,y,room_inverse) and not place_meeting(x+movespeed,y,room_inverse))
+     else if(place_meeting(x-movespeed,y,obj_collidable) and not place_meeting(x+movespeed,y,obj_collidable))
      {
-         x += movespeed;
+         x += movespeed + 1;
          y += movespeed * sign(vsp);
      }
      else
       {
 
-         while(!place_meeting(x,y+sign(vsp),room_inverse))
+         while(!place_meeting(x,y+sign(vsp),obj_collidable))
          {
              y += sign(vsp);
          }
@@ -183,7 +183,7 @@ y += vsp;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_npc">
+    <event eventtype="4" ename="obj_collidable">
       <action>
         <libid>1</libid>
         <id>603</id>
