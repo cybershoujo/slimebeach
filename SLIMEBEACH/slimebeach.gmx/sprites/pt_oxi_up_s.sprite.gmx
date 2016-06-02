@@ -20,6 +20,6 @@
   <width>64</width>
   <height>128</height>
   <frames>
-    <frame index="0">images\pt_player_left_0.png</frame>
+    <frame index="0">images\pt_oxi_up_s_0.png</frame>
   </frames>
 </sprite>

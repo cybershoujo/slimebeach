@@ -54,17 +54,23 @@
       <sprite>sprites\spr_placeholder</sprite>
     </sprites>
     <sprites name="character sprites">
-      <sprites name="pt_player">
-        <sprite>sprites\pt_player_left</sprite>
-        <sprite>sprites\pt_player_up</sprite>
-        <sprite>sprites\pt_player_right</sprite>
-        <sprite>sprites\pt_player_down</sprite>
+      <sprites name="pt_oxi_small">
+        <sprite>sprites\pt_oxi_left_s</sprite>
+        <sprite>sprites\pt_oxi_up_s</sprite>
+        <sprite>sprites\pt_oxi_right_s</sprite>
+        <sprite>sprites\pt_oxi_down_s</sprite>
       </sprites>
       <sprites name="pt_beancube">
         <sprite>sprites\pt_beancube_l</sprite>
         <sprite>sprites\pt_beancube_r</sprite>
         <sprite>sprites\pt_beancube_d</sprite>
         <sprite>sprites\pt_beancube_u</sprite>
+      </sprites>
+      <sprites name="pt_mado">
+        <sprite>sprites\pt_mado_l</sprite>
+        <sprite>sprites\pt_mado_r</sprite>
+        <sprite>sprites\pt_mado_d</sprite>
+        <sprite>sprites\pt_mado_u</sprite>
       </sprites>
     </sprites>
     <sprites name="Text Engine - Sprites">
@@ -76,9 +82,11 @@
         <sprite>sprites\spr_man</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\pt_hp_frame</sprite>
-    <sprite>sprites\pt_hp</sprite>
-    <sprite>sprites\pt_mp</sprite>
+    <sprites name="pt_hud">
+      <sprite>sprites\pt_mp</sprite>
+      <sprite>sprites\pt_hp_frame</sprite>
+      <sprite>sprites\pt_hp</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Text Engine - Backgrounds">
