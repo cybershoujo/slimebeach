@@ -227,6 +227,9 @@
       </scripts>
     </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sha_bar_vert.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <fonts name="Anklada">
       <font>fonts\anklada</font>
