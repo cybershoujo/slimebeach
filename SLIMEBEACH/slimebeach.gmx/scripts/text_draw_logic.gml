@@ -61,6 +61,16 @@ for(i=0; i<ds_map_size(global.textvars); i+=1) {
                 text_debugger("text_draw_logic",text_debug.INFO,"name for "+displaystyle+" does not exist!");
             }
         }
+        
+                //-------ADD SPRITE IF NEEDED
+        if (textbox[? "talksprite"] != noone) {
+            if (script_exists(asset_get_index("text_draw_c_"+displaystyle+"_talksprite"))) {
+                script_execute(asset_get_index("text_draw_c_"+displaystyle+"_talksprite"),textbox);
+            } else {
+                text_debugger("text_talksprite_logic",text_debug.INFO,"talksprite for "+displaystyle+" does not exist!");
+            }
+        }
+        
         //-------DRAW BACKGROUND
         if (script_exists(asset_get_index("text_draw_c_"+displaystyle+"_background"))) {
             script_execute(asset_get_index("text_draw_c_"+displaystyle+"_background"),textbox);
