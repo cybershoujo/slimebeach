@@ -98,7 +98,6 @@
       <sprite>sprites\pt_mp</sprite>
       <sprite>sprites\pt_hp_frame</sprite>
       <sprite>sprites\pt_hp</sprite>
-      <sprite>sprites\xpbar</sprite>
     </sprites>
     <sprites name="pt_combat">
       <sprites name="pt_combat_hud">
@@ -110,11 +109,7 @@
         <sprite>sprites\pt_combat_select_bar</sprite>
       </sprites>
     </sprites>
-    <sprites name="masks and spooky things">
-      <sprite>sprites\barmask</sprite>
-    <sprite>sprites\sprite35</sprite>
   </sprites>
-</sprites>
   <backgrounds name="background">
     <backgrounds name="Text Engine - Backgrounds">
       <backgrounds name="demo">
@@ -244,10 +239,6 @@
       </scripts>
     </scripts>
   </scripts>
-  <shaders name="shaders">
-    <shader type="GLSLES">shaders\shader2.shader</shader>
-    <shader type="GLSLES">shaders\sh_vertbar.shader</shader>
-  </shaders>
   <fonts name="fonts">
     <fonts name="Anklada">
       <font>fonts\anklada</font>
