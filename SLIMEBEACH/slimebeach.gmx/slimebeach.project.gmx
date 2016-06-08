@@ -42,7 +42,9 @@
   <NewExtensions>
     <extension index="0">extensions\HappyTear Text-Dialogue Engine</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Shark_Lunch</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="pt_deco">
       <sprite>sprites\spr_dollar</sprite>
@@ -96,6 +98,16 @@
       <sprite>sprites\pt_mp</sprite>
       <sprite>sprites\pt_hp_frame</sprite>
       <sprite>sprites\pt_hp</sprite>
+    </sprites>
+    <sprites name="pt_combat">
+      <sprites name="pt_combat_hud">
+        <sprite>sprites\pt_combat_selection</sprite>
+        <sprite>sprites\pt_combat_highlight_w</sprite>
+        <sprite>sprites\pt_combat_highlight_a</sprite>
+        <sprite>sprites\pt_combat_highlight_s</sprite>
+        <sprite>sprites\pt_combat_highlight_d</sprite>
+        <sprite>sprites\pt_combat_select_bar</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -244,6 +256,16 @@
     <object>objects\room_inverse</object>
     <object>objects\obj_npc</object>
     <object>objects\obj_player</object>
+    <objects name="combat">
+      <objects name="hud">
+        <object>objects\obj_combat_selection</object>
+        <object>objects\obj_combat_highlight_w</object>
+        <object>objects\obj_combat_highlight_a</object>
+        <object>objects\obj_combat_highlight_s</object>
+        <object>objects\obj_combat_highlight_d</object>
+        <object>objects\obj_combat_select_bar</object>
+      </objects>
+    </objects>
     <objects name="deco">
       <object>objects\obj_sanddollar</object>
     </objects>
@@ -264,6 +286,7 @@
     <rooms name="Text Engine - Demo Rooms">
       <room>rooms\text_demo_room</room>
     </rooms>
+    <room>rooms\rm_combat</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
