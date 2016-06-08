@@ -100,6 +100,12 @@
       <sprite>sprites\pt_hp</sprite>
       <sprite>sprites\xpbar</sprite>
     </sprites>
+<<<<<<< HEAD
+    <sprites name="masks and spooky things">
+      <sprite>sprites\barmask</sprite>
+    </sprites>
+    <sprite>sprites\sprite35</sprite>
+=======
     <sprites name="pt_combat">
       <sprites name="pt_combat_hud">
         <sprite>sprites\pt_combat_selection</sprite>
@@ -110,11 +116,8 @@
         <sprite>sprites\pt_combat_select_bar</sprite>
       </sprites>
     </sprites>
-    <sprites name="masks and spooky things">
-      <sprite>sprites\barmask</sprite>
-    <sprite>sprites\sprite35</sprite>
+>>>>>>> refs/remotes/origin/master
   </sprites>
-</sprites>
   <backgrounds name="background">
     <backgrounds name="Text Engine - Backgrounds">
       <backgrounds name="demo">

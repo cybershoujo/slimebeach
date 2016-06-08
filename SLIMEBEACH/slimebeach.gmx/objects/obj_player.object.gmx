@@ -37,6 +37,9 @@ face = 1;
 
 hp = 100;
 mp = 100;
+
+maxHp = 100;
+maxMp = 100;
 </string>
           </argument>
         </arguments>
@@ -175,9 +178,6 @@ if(place_meeting(x,y+vsp,obj_collidable))
 x += hsp;
 
 y += vsp;
-
-
-
 </string>
           </argument>
         </arguments>
