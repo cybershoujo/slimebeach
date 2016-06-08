@@ -38,6 +38,8 @@ ds_map_add(argument0, "color_nameplate", $000000);
 ds_map_add(argument0, "bgalpha", 1);
 ds_map_add(argument0, "bgimage", noone);
 ds_map_add(argument0, "room", room);
+ds_map_add(argument0, "talksprite", spr_t_mado_norm);
+
 //Player is technically an internal variable that keeps track of who
 //controls this conversation (for multiplayer)
 ds_map_add(argument0, "player", global.text_local_player);

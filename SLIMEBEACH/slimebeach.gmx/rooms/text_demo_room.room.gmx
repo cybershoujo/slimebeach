@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_text_demo_player" xview="0" yview="0" wview="512" hview="384" xport="0" yport="0" wport="1024" hport="768" hborder="64" vborder="128" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="512" hview="384" xport="0" yport="0" wport="1024" hport="768" hborder="64" vborder="128" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -50,27 +50,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances>
-    <instance objName="obj_text_demo_wall" x="32" y="496" name="inst_B1756F82" locked="0" code="" scaleX="60.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_wall" x="1936" y="64" name="inst_0F5FEF60" locked="0" code="" scaleX="1" scaleY="13.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_wall" x="32" y="64" name="inst_145D7970" locked="0" code="" scaleX="1" scaleY="13.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_onlyonce" x="1856" y="464" name="inst_9FE56E3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_multi" x="1600" y="480" name="inst_ECB5E702" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_control" x="96" y="432" name="inst_8982241B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="1376" y="480" name="inst_E3E1FA83" locked="0" code="self.conv = text_demo9_disappear&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_walkby" x="960" y="480" name="inst_FCA46C44" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="1200" y="480" name="inst_E233913C" locked="0" code="self.conv = text_demo8_manual&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_player" x="112" y="480" name="inst_14AF9052" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="176" y="480" name="inst_F57BE6C4" locked="0" code="self.conv = text_demo1_simple;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="704" y="480" name="inst_CE77FA95" locked="0" code="self.conv = text_demo5_lock&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="304" y="480" name="inst_2DF2312E" locked="0" code="self.conv = text_demo2_animations&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="464" y="480" name="inst_F5EFF285" locked="0" code="self.conv = text_demo3_pointing&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="608" y="480" name="inst_D16CACE6" locked="0" code="self.conv = text_demo4_multiple&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo" x="832" y="480" name="inst_B1EC273D" locked="0" code="self.conv = text_demo6_bubble&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_nothing" x="880" y="288" name="inst_22181667" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_wall" x="848" y="320" name="inst_7E6FBEE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_text_demo_wall" x="880" y="320" name="inst_8B97E599" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-  </instances>
+  <instances/>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

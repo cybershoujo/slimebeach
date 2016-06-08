@@ -67,20 +67,30 @@
         <sprite>sprites\pt_beancube_u</sprite>
       </sprites>
       <sprites name="pt_mado">
-        <sprite>sprites\pt_mado_l</sprite>
-        <sprite>sprites\pt_mado_r</sprite>
-        <sprite>sprites\pt_mado_d</sprite>
-        <sprite>sprites\pt_mado_u</sprite>
+        <sprites name="walksprites">
+          <sprite>sprites\pt_mado_d</sprite>
+          <sprite>sprites\pt_mado_u</sprite>
+          <sprite>sprites\pt_mado_l</sprite>
+          <sprite>sprites\pt_mado_r</sprite>
+        </sprites>
+        <sprites name="talksprites">
+          <sprite>sprites\spr_t_mado_norm</sprite>
+          <sprite>sprites\spr_t_mado_mad</sprite>
+          <sprite>sprites\spr_t_mado_83c</sprite>
+          <sprite>sprites\spr_t_mado_83c_sweat</sprite>
+          <sprite>sprites\spr_t_mado_83c_squint</sprite>
+          <sprite>sprites\spr_t_mado_ghost</sprite>
+          <sprite>sprites\spr_t_mado_squint</sprite>
+          <sprite>sprites\spr_t_mado_sweat</sprite>
+          <sprite>sprites\spr_t_mado_83cc_sweat</sprite>
+          <sprite>sprites\spr_t_mado_83cc_heart</sprite>
+          <sprite>sprites\spr_t_mado_smug</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Text Engine - Sprites">
       <sprite>sprites\spr_textnext</sprite>
       <sprite>sprites\spr_textend</sprite>
-      <sprites name="demo">
-        <sprite>sprites\spr_text_demo_wall</sprite>
-        <sprite>sprites\spr_text_demo_player</sprite>
-        <sprite>sprites\spr_man</sprite>
-      </sprites>
     </sprites>
     <sprites name="pt_hud">
       <sprite>sprites\pt_mp</sprite>
@@ -141,6 +151,7 @@
             <script>scripts\text_draw_c_banner_background.gml</script>
             <script>scripts\text_draw_c_banner_textnext.gml</script>
             <script>scripts\text_draw_c_banner_extra.gml</script>
+            <script>scripts\text_draw_c_banner_talksprite.gml</script>
           </scripts>
           <scripts name="pointing">
             <script>scripts\text_draw_c_pointing_metadata.gml</script>
@@ -236,25 +247,16 @@
     <objects name="deco">
       <object>objects\obj_sanddollar</object>
     </objects>
-    <objects name="Text Engine - Demo Objects">
-      <object>objects\obj_text_control</object>
-      <object>objects\obj_text_demo_player</object>
-      <object>objects\obj_text_demo_nothing</object>
-      <object>objects\obj_text_demo</object>
-      <object>objects\obj_text_demo_onlyonce</object>
-      <object>objects\obj_text_demo_walkby</object>
-      <object>objects\obj_text_demo_multi</object>
-      <object>objects\obj_text_demo_wall</object>
-    </objects>
     <objects name="util">
       <object>objects\obj_gui_create</object>
-      <object>objects\obj_16</object>
+      <object>objects\obj_textwrite</object>
       <object>objects\obj_hp_frame</object>
       <object>objects\obj_inv</object>
       <object>objects\obj_damagetile</object>
       <object>objects\obj_pause</object>
       <object>objects\obj_trail_camera</object>
       <object>objects\obj_collidable</object>
+      <object>objects\obj_16</object>
     </objects>
   </objects>
   <rooms name="rooms">

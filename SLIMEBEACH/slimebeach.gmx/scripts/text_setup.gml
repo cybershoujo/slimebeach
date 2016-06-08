@@ -52,12 +52,12 @@ global.text_local_player = obj_player.id;
 /*
  * Rounding of the nameplates
  */
-global.text_roundingname = 0;
+global.text_roundingname = 20;
 
 /*
  * Rounding of the textboxes
  */
-global.text_rounding = 0;
+global.text_rounding = 20;
 
 /*
  * Set this to true do disabled box fading in and out animations
@@ -98,7 +98,7 @@ ds_list_add(global.text_players,global.text_local_player);
  * be found in the manual
  */
  
-global.text_surf = -1;
+global.text_surf = 0;
 
 /*
  * This script setups the surfaces.
@@ -135,6 +135,7 @@ global.textsettings[10] = "room";
 global.textsettings[11] = "bgcolor_nameplate";
 global.textsettings[12] = "color_nameplate";
 global.textsettings[13] = "font_nameplate";
+global.textsettings[14] = "talksprite";
 
 /*
  * List of all settings to be copied to lines and nolines when they are created
