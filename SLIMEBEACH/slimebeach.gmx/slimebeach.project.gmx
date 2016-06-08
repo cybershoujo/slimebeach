@@ -96,7 +96,12 @@
       <sprite>sprites\pt_mp</sprite>
       <sprite>sprites\pt_hp_frame</sprite>
       <sprite>sprites\pt_hp</sprite>
+      <sprite>sprites\xpbar</sprite>
     </sprites>
+    <sprites name="masks and spooky things">
+      <sprite>sprites\barmask</sprite>
+    </sprites>
+    <sprite>sprites\sprite35</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Text Engine - Backgrounds">
@@ -228,7 +233,8 @@
     </scripts>
   </scripts>
   <shaders name="shaders">
-    <shader type="GLSLES">shaders\sha_bar_vert.shader</shader>
+    <shader type="GLSLES">shaders\shader2.shader</shader>
+    <shader type="GLSLES">shaders\sh_vertbar.shader</shader>
   </shaders>
   <fonts name="fonts">
     <fonts name="Anklada">
