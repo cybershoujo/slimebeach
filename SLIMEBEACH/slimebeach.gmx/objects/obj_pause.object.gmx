@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.pause = 0;
+room_goto(rm_combat);
 </string>
           </argument>
         </arguments>

@@ -44,6 +44,7 @@
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\Shark_Lunch</sound>
+    <sound>sound\takka</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="pt_deco">
@@ -108,18 +109,25 @@
         <sprite>sprites\pt_combat_highlight_s</sprite>
         <sprite>sprites\pt_combat_highlight_d</sprite>
         <sprite>sprites\pt_combat_select_bar</sprite>
+        <sprite>sprites\pt_combat_submenu</sprite>
+        <sprite>sprites\pt_combat_highlight_sub0</sprite>
+        <sprite>sprites\pt_combat_highlight_sub1</sprite>
+        <sprite>sprites\pt_combat_highlight_sub2</sprite>
       </sprites>
     </sprites>
     <sprites name="masks and spooky things">
       <sprite>sprites\barmask</sprite>
-    <sprite>sprites\sprite35</sprite>
+      <sprite>sprites\sprite35</sprite>
+    </sprites>
   </sprites>
-</sprites>
   <backgrounds name="background">
     <backgrounds name="Text Engine - Backgrounds">
       <backgrounds name="demo">
         <background>background\bkg_sign_new</background>
       </backgrounds>
+    </backgrounds>
+    <backgrounds name="bkg_combat">
+      <background>background\bkg_placeholderbeach</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -273,6 +281,12 @@
         <object>objects\obj_combat_highlight_s</object>
         <object>objects\obj_combat_highlight_d</object>
         <object>objects\obj_combat_select_bar</object>
+        <object>objects\obj_combat_sub_select_bar</object>
+        <object>objects\obj_combat_camera</object>
+        <object>objects\obj_combat_submenu</object>
+        <object>objects\obj_combat_highlight_sub0</object>
+        <object>objects\obj_combat_highlight_sub1</object>
+        <object>objects\obj_combat_highlight_sub2</object>
       </objects>
     </objects>
     <objects name="deco">
