@@ -3,5 +3,5 @@ The summer slime game!
 
 <p>Editors:<p>
 <ul>
-<li>Ruby "Rubiline" Roundabout</li>
+<li>Ruby "Rubiline" Tartakovsky</li>
 </ul>
